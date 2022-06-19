@@ -60,9 +60,18 @@
     align-items: center;
     text-align: right;
 }
-.menu-icons img{
-    width:20px ;
-    margin-left: 40px;
+.image2{
+    width:40px ;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.image{
+    width:50px ;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 30px;
     cursor: pointer;
 }
 .content{
@@ -82,16 +91,17 @@
 }
 button{
     width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 0 10px;
+    padding: 15px 15px;
+    display: inline-block;
+    text-align: center; 
+    margin: 10px 10px;
     border-radius: 25px;
     font-weight: bold;
     border:2px solid #bd4291;
     background: #bd4291;
     color: #fff;
     cursor: pointer;
-    transition: background 0.5s;
+    transition: background-color 0.3s, border 0.3s;
 }
 button:hover{
     background: transparent;
