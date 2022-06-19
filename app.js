@@ -16,7 +16,7 @@ const azureLoginSchema = {
 
 const azureLoginData = mongoose.model("azureLoginData", azureLoginSchema);
 
-app.get("/",function(req,res){
+app.get("/home",function(req,res){
   res.render("index")
 })
 
@@ -57,34 +57,24 @@ app.get("/funds",function(res,req){
   res.render("")
 })
 
-app.get("/login",function(req,res){
+app.get("/",function(req,res){
   res.render("")
 })
-// app.post("/login",function(req,res){
-//   const pass = req.body.pass;
-//   const em=req.body.ema;
-  
-// azureLoginData.findOne({email:em}).then(j=>{
-//       if(j){
-//           //alert("Email already exists");
-//           console.log("Email already exists");
-//           res.redirect("/error");
-//       }
-//       else{
-
-//           const i= new employeeData({
-//               first_name:fname,
-//               last_name:lname,
-//               address: add,
-//               post: pst,
-//               email:em
-//           });
-//           i.save();
-//           res.redirect("/employee");
-
-//       }
-//   })
-// })
+app.post("/",function(req,res){
+  const pass = req.body.pass;
+  const em=req.body.ema;
+  if(em=="s"){
+    if(pass=="a"){
+      res.redirect("/home")
+    }
+    else{
+      res.render("error")
+    }
+  }
+  else{
+    res.render("error")
+  }
+})
 
 
 
