@@ -46,12 +46,30 @@ request('https://www.godigit.com/guides/government-schemes/women-empowerment-sch
   }});
 
 });
-
-app.get("/seeJobs",function(res,req){
-  res.render("")
+app.get("/applyJobs",function(req,res){
+  res.render("application")
 })
-app.get("/seeShops",function(res,req){
-  res.render("")
+app.get("/dashboard",function(req,res){
+  res.render("index2")
+})
+app.post("/applyJobs",function(req,res){
+  res.render("application")
+})
+app.get("/jobDesc",function(req,res){
+  res.render("jobDescrip")
+})
+app.post("/jobDesc",function(req,res){
+  res.render("jobDescrip")
+})
+
+app.get("/singleDescription",function(req,res){
+  res.render("singleDescrip")
+})
+app.get("/seeJobs",function(req,res){
+  res.render("jobs")
+})
+app.get("/seeShops",function(req,res){
+  res.render("postGrid")
 })
 app.get("/funds",function(req,res){
   res.render("form")

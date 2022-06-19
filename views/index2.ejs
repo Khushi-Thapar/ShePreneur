@@ -5,29 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShePreneur-Main page</title>
-    <link rel="stylesheet" href="Resources/css/style2.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body onload="slider()">
     <div class="banner">
         <div class="slider">
-            <img src="Resources/img/background.jpg" alt="img1" id="slideimg">
+            <img src="css/background.jpg" alt="img1" id="slideimg">
         </div>
         <div class="overlay">
             <div class="navbar">
                 <div class="logo">
-                    <img src="Resources/img/logo-shepreneur-removebg-preview.png" alt="logo">
+                    <img src="css/logo-shepreneur-removebg-preview.png" alt="logo">
                 </div>
                 <div class="menu-icons">
-                    <img src="Resources/img/user3-removebg-preview.png" alt="user">
-                    <img src="Resources/img/lines-removebg-preview.png" alt="menu">
+                    <img src="css/user3-removebg-preview.png" alt="user">
+                    <img src="css/lines-removebg-preview.png" alt="menu">
                 </div>
             </div>
             <div class="content">
                 <h1>Hello aspiring entrepreneur!</h1>
                 <h3>You are on the right track to fulfill your dreams.</h3>
                 <div>
-                    <button type="button">Sell</button>
-                    <button type="button" class="btn-2">Hire employees</button>
+                    <form action="/jobDesc">
+
+                        <button type="submit">Sell</button>
+                    </form>
+                    <form action="/jobDesc">
+
+                        <button type="submit">Hire Employees</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -35,12 +41,12 @@
     <script>
         var slideimg = document.getElementById("slideimg");
         var images= new Array(
-            "Resources/img/background.jpg",
-            "Resources/img/background2.jpg",
-            "Resources/img/background3.jpg",
-            "Resources/img/background4.jpg",
-            "Resources/img/background5.jpg",
-            "Resources/img/background6.png"
+            "css/background.jpg",
+            "css/background2.jpg",
+            "css/background3.jpg",
+            "css/background4.jpg",
+            "css/background5.jpg",
+            "css/background6.png"
         );
         var len = images.length;
         var i = 0;
