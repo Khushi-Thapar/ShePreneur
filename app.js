@@ -7,14 +7,14 @@ const app=express();
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/azureDB",{useNewUrlParser: true});
-const azureLoginSchema = {
-  passw: String,
-  email:String
+// mongoose.connect("mongodb://localhost:27017/azureDB",{useNewUrlParser: true});
+// const azureLoginSchema = {
+//   passw: String,
+//   email:String
 
-  };
+//   };
 
-const azureLoginData = mongoose.model("azureLoginData", azureLoginSchema);
+// const azureLoginData = mongoose.model("azureLoginData", azureLoginSchema);
 
 app.get("/home",function(req,res){
   res.render("index")

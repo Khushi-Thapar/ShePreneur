@@ -75,16 +75,18 @@ font-size: 16px;
 
 
 
-.login-box input[type="submit"]
+.login-box button[type="submit"]
 {
 
-border: none;
-outline: none;
-height: 40px;
-font-size: 18px;
-border-radius: 20px;
-color: #fff;
-background: #1c8adb;
+    border: none;
+    outline: none;
+    height: 32px;
+    margin: 31px 73px;
+    width: 119px;
+    font-size: 18px;
+    border-radius: 128px;
+    color: #fff;
+    background: #1c8adb;
 
 }
 
@@ -96,17 +98,10 @@ background: #1c8adb;
 }
 
 
-.login-box input[type="submit"]:hover
+.login-box button[type="submit"]:hover
 {
 
     cursor: pointer;
     background: #932493;
     color: #000;
-}
-.login-box a{
-
-    text-decoration: none;
-    font-size: 14px;
-    color: #fff;
-
 }
