@@ -53,27 +53,43 @@ app.get("/seeJobs",function(res,req){
 app.get("/seeShops",function(res,req){
   res.render("")
 })
-app.get("/funds",function(res,req){
-  res.render("")
+app.get("/funds",function(req,res){
+  res.render("form")
 })
 
 app.get("/",function(req,res){
-  res.render("")
+  res.render("login")
+  // var em=req.body.em;
+  // var pass = req.body.pass;
+  // if(em=="s"){
+  //   if(pass=="a"){
+  //     res.render("index")
+  //   }
+  //   else{
+  //     res.render("error")
+  //   }
+  // }
+  // else{
+  //   res.render("error")
+  // }
 })
 app.post("/",function(req,res){
-  const pass = req.body.pass;
-  const em=req.body.ema;
-  if(em=="s"){
-    if(pass=="a"){
-      res.redirect("/home")
-    }
-    else{
-      res.render("error")
-    }
-  }
-  else{
-    res.render("error")
-  }
+  res.redirect("/home")
+  // var emaa=req.body.em;
+  // var passaa = req.body.pass;
+  // console.log(emaa)
+
+  // if(em=="s"){
+  //   if(pass=="a"){
+  //     res.redirect("/home")
+  //   }
+  //   else{
+  //     res.render("error")
+  //   }
+  // }
+  // else{
+  //   res.render("error")
+  // }
 })
 
 
